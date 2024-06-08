@@ -9,6 +9,9 @@ import {
 import { CreateUserParams, UpdateUserParams } from "@/types";
 import { NextResponse } from "next/server";
 
+export async function GET() {
+  return Response.json("Hello from /api/webhook/clerk");
+}
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the endpoint
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
