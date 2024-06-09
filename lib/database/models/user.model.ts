@@ -11,7 +11,6 @@ export interface IUser extends Document {
   photo: string;
 }
 
-
 const UserSchema = new Schema({
   clerkId: {
     type: String,
@@ -43,8 +42,6 @@ const UserSchema = new Schema({
     required: true,
   },
 });
-
-
 
 const User = models.User || model("User", UserSchema);
 
