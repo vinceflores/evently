@@ -22,12 +22,16 @@ const EventSchema = new Schema({
     required: true,
   },
   description: String,
-  locaiton: String,
+  location: String,
   createdAt: {
     type: Date,
     default: Date.now(),
   },
   imageUrl: { type: String, required: true },
+  url: {
+    type: String,
+
+  },
   startDateTime: {
     type: Date,
     default: Date.now(),
@@ -41,7 +45,6 @@ const EventSchema = new Schema({
     type: Boolean,
     default: false,
   },
-
   category: {
     type: Schema.Types.ObjectId,
     ref: "Category",
@@ -52,6 +55,6 @@ const EventSchema = new Schema({
   },
 });
 
-const Event = models.Evnet || model("Event", EventSchema);
+const Event = models.Event || model("Event", EventSchema);
 
 export default Event;
