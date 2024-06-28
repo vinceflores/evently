@@ -30,6 +30,7 @@ export default function MobileNav() {
             alt="logo"
             width={128}
             height={38}
+            className="w-auto h-auto"
           />
           <Separator className="border border-gray-500" />
           <NavItems />

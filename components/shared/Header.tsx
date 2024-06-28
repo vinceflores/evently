@@ -12,7 +12,7 @@ const Header = () => {
     <header className="w-full border-b">
       <div className="wrapper flex items-center justify-between `">
         <Link href="/" className="w-36">
-          <Image alt="logo" src={Logo} width={128} height={36} />
+          <Image className="w-auto h-auto" alt="logo" src={Logo} width={128} height={36} />
         </Link>
         <SignedIn>
           <nav className="md:flex-between hidden w-full max-w-xs">

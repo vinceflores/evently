@@ -104,10 +104,10 @@ async function EventDetaiuls({
           data={relatedEvents?.data}
           emptyTitle="No Events Found"
           emptyStateSubtext="Come back later"
-          collectiontype="All_Events"
-          limit={6}
-          page={1}
-          totalPages={2}
+          collectionType="All_Events"
+          limit={3}
+          page={searchParams.page as string}
+          totalPages={relatedEvents?.totalPages}
         />
       </section>
     </>
